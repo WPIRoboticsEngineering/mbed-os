@@ -21,7 +21,7 @@
 
 #include "device.h"
 
-#if DEVICE_ANALOGOUT
+#if defined(DEVICE_ANALOGOUT)
 
 #ifdef __cplusplus
 extern "C" {

@@ -183,7 +183,11 @@ typedef enum {
     D8          = PF_12,
     D9          = PD_15,
     D10         = PD_14,
+#if defined(STM32_D11_SPI_ETHERNET_PIN)
     D11         = STM32_D11_SPI_ETHERNET_PIN, /* config in targets.json file */
+#else
+	D11 		= PB_5,
+#endif
     D12         = PA_6,
     D13         = PA_5,
     D14         = PB_9,

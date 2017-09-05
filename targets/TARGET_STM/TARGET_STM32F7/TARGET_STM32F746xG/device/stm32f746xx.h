@@ -9,7 +9,7 @@
   *          This file contains:
   *           - Data structures and the address mapping for all peripherals
   *           - Peripheral's registers declarations and bits definition
-  *           - Macros to access peripheral’s registers hardware
+  *           - Macros to access peripheralï¿½s registers hardware
   *
   ******************************************************************************
   * @attention
@@ -51,6 +51,12 @@
 
 #ifndef __STM32F746xx_H
 #define __STM32F746xx_H
+#if !defined(DEVICE_ANALOGOUT)
+#define DEVICE_ANALOGOUT
+#endif
+#if !defined(DEVICE_ANALOGIN)
+#define DEVICE_ANALOGIN
+#endif
 
 #ifdef __cplusplus
  extern "C" {
