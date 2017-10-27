@@ -57,7 +57,9 @@
 #if !defined(DEVICE_ANALOGIN)
 #define DEVICE_ANALOGIN
 #endif
-
+#if !defined(DEVICE_SPI)
+#define DEVICE_SPI
+#endif
 #ifdef __cplusplus
  extern "C" {
 #endif /* __cplusplus */
