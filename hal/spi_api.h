@@ -23,7 +23,7 @@
 #include "hal/dma_api.h"
 #include "hal/buffer.h"
 
-#if DEVICE_SPI
+#if defined(DEVICE_SPI)
 
 #define SPI_EVENT_ERROR       (1 << 1)
 #define SPI_EVENT_COMPLETE    (1 << 2)
@@ -35,7 +35,7 @@
 #define SPI_FILL_WORD         (0xFFFF)
 #define SPI_FILL_CHAR         (0xFF)
 
-#if DEVICE_SPI_ASYNCH
+#if defined(DEVICE_SPI_ASYNCH)
 /** Asynch SPI HAL structure
  */
 typedef struct {

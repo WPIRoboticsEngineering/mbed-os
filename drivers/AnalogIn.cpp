@@ -16,7 +16,7 @@
 
 #include "drivers/AnalogIn.h"
 
-#if DEVICE_ANALOGIN
+#if defined(DEVICE_ANALOGIN)
 
 namespace mbed {
 
